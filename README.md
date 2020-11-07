@@ -9,7 +9,22 @@ First 100 SNPs from Chr22 in this new matrix form can be found as data/example.c
 
 ### ASE genes
 * A gene list for each individual is taken from http://alleledb.gersteinlab.org. The txt file that has the genes in the first column and individual IDs in the second column can be found at data/genesVSinds.txt
-* For each individual, we found the locations of all the exons using Gencode's GRCh37 annotation file from ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_35/GRCh37_mapping/gencode.v35lift37.annotation.gtf.gz
+* For each individual, we found the locations of all the exons using Gencode's GRCh37 annotation file from ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf.gz
 * We reported ASE exon locations for each individual in data/exon_locations.zip
 
 ## Step 1: Finding candidate SNPs
+* Go to folder candidate_snps
+* find_candidate_snps.sh is the main script that call the C++ file. 
+
+First, compile the C++ file by typing
+``
+g++ -o overlap Overlap.cpp
+``
+Then,
+``
+sh find_candidate_snps.sh <ind>
+``
+<ind> is the individual identifier (e.g. NA12878)
+
+
+
