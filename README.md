@@ -1,6 +1,6 @@
 # Recovering genomes and phenotypes using allele-specific gene expression
 
-## DATA
+## Data
 
 ### Genotypes
 * 1000 Genomes vcf files for all of the chromosomes are downloaded from ftp locations in https://www.internationalgenome.org
