@@ -67,6 +67,7 @@ Then,
 ``
 sh CalculateGap.sh <ind>
 ``
+
 ``<ind>`` is the individual identifier (e.g. NA12878). This will produce a ``<ind>.gap.txt`` file that has 4 columns. First column is the individual identifier, second column is the column number of the matching individual. For example, if it is 5; that means it matches to the 5th individual in the 1000 Genomes vcf file. Third column is the value of the gap, which is the ratio between the highest linking score and second highest linking score. Forth column is the value of the second highest linking score for sanity check.
 
 ### Details of CalculateGap.sh
@@ -80,5 +81,6 @@ sh CalculateGap.sh <ind>
 ``
 sh CalculatePValue.sh <ind>
 ``
+
 ``<ind>`` is the individual identifier (e.g. NA12878). This will produce a ``<ind>.random.gaps.txt`` file that has 4 columns (same as above) and 1000 rows coming from 1000 random trials. You can then compare the gap value in ``<ind>.gap.txt`` to the values in ``<ind>.random.gaps.txt`` and count the number of times the real gap score was same or below the random scores. This count divided by 1000 (number of trials) will give you the p-value for the gap value in ``<ind>.gap.txt`` .
 
