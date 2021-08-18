@@ -1,4 +1,4 @@
-# Recovering genomes and phenotypes using allele-specific gene expression
+# Recovering genotypes and phenotypes using allele-specific genes
 
 ## Data
 
